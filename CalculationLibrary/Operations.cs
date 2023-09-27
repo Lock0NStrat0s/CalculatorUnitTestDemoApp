@@ -8,24 +8,31 @@ namespace CalculationLibrary
 {
     public class Operations
     {
-        public int Add(int uno, int dos)
+        public double Add(double uno, double dos)
         {
             return uno + dos;
         }
 
-        public int Subtract(int uno, int dos)
+        public double Subtract(double uno, double dos)
         {
-            return uno + dos;
+            return uno - dos;
         }
 
-        public int Multiply(int uno, int dos)
+        public double Multiply(double uno, double dos)
         {
-            return uno + dos;
+            return uno * dos;
         }
 
-        public int Divide(int uno, int dos)
+        public double Divide(double uno, double dos)
         {
-            return uno + dos;
+            double output = 0;
+
+            if (dos != 0)
+            {
+                output = uno / dos;
+            }
+
+            return output;
         }
     }
 }
